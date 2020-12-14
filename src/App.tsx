@@ -1,5 +1,8 @@
 import * as React from "react";
 import "./styles.css";
+import mapboxgl from "mapbox-gl";
+
+mapboxgl.accessToken = process.env.MAPBOX_TOKEN as string
 
 export default function App() {
   return (

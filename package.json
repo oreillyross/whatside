@@ -5,13 +5,16 @@
   "keywords": [],
   "main": "src/index.tsx",
   "dependencies": {
+    "mapbox-gl": "^2.0.0",
     "react": "17.0.0",
     "react-dom": "17.0.0",
     "react-scripts": "3.4.0"
   },
   "devDependencies": {
+    "@types/mapbox-gl": "^2.0.0",
     "@types/react": "16.9.19",
     "@types/react-dom": "16.9.5",
+    "node": "^15.4.0",
     "typescript": "3.7.5"
   },
   "scripts": {
