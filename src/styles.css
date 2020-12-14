@@ -8,3 +8,16 @@
     background-color: red;
   }
 }
+
+.input_location {
+  padding: 6px;
+}
+
+.input_location input {
+  display: block;
+  margin: 0 auto;
+
+  width: 50vw;
+  padding: 6px;
+}
+
