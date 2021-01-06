@@ -48,8 +48,17 @@ const locations = [
 // which pings the api everytime typing in the search box is finished.
 // to prevent too many queries use lodash.debounce
 
+const title = 'titlddde'
+
 const App = () => {
   //const [state, dispatch] = React.useReducer(reducer, initialState)
+  const searchRef = React.useRef<HTMLInputElement>(null)
+
+  React.useEffect(() => {
+    if (searchRef !== null && searchRef.current !== null) {
+      searchRef.current.focus()
+    }
+  },[searchRef.current])
 
   return (
     <>
@@ -58,6 +67,11 @@ const App = () => {
           {(props) => {
             return <div>
               {JSON.stringify(props)}
+              <div className='main'>
+
+                <input ref={searchRef} type="search" name="search" id="search"/>
+              </div>
+              
             </div>;
           }}
         </Downshift>

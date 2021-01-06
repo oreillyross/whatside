@@ -40,3 +40,12 @@
     display: flex;
     justify-content: center;
   }
+
+.main {
+  display: flex;
+  border: 1px solid black;
+  color: #333333;
+  padding: 8px;
+  justify-content: center;
+} 
+
