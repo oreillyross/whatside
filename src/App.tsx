@@ -1,5 +1,6 @@
 import * as React from "react";
 import "./styles.css";
+import Downshift from "downshift";
 
 type Props = {
   who?: string;
@@ -42,7 +43,7 @@ const locations = [
   },
 ];
 
-// Need to add a Elasticsearch api which pulls all data from 
+// Need to add a Elasticsearch api which pulls all data from
 // various apis into a search index. Then build front end with Downshift
 // which pings the api everytime typing in the search box is finished.
 // to prevent too many queries use lodash.debounce
@@ -53,12 +54,13 @@ const App = () => {
   return (
     <>
       <ThemeProvider>
-        <div className="main-container">
-          <div className="main-text">
-            <label htmlFor="search">Location</label>
-            <input type="search" name="search" id="search" />
-          </div>
-        </div>
+        <Downshift>
+          {(props) => {
+            return <div>
+              {JSON.stringify(props)}
+            </div>;
+          }}
+        </Downshift>
       </ThemeProvider>
     </>
   );
