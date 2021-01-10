@@ -1,3 +1,4 @@
+// @flow
 interface Form<T> {
   values: T;
 }

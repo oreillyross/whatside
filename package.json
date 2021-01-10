@@ -13,9 +13,11 @@
     "react-scripts": "3.4.0"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.20",
     "@types/mapbox-gl": "^2.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "16.9.5",
+    "flow-bin": "^0.142.0",
     "node": "^15.4.0",
     "typescript": "3.7.5"
   },
@@ -23,7 +25,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "flow": "flow"
   },
   "browserslist": [
     ">0.2%",
