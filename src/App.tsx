@@ -27,6 +27,7 @@ const ThemeProvider: React.FC = ({ children }) => {
   );
 };
 
+
 // Need to add a Elasticsearch api which pulls all data from
 // various apis into a search index. Then build front end with Downshift
 // which pings the api everytime typing in the search box is finished.
